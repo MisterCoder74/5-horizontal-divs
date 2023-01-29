@@ -30,6 +30,8 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  margin: 0;
+  padding: 0;
 }
 
 html,
@@ -158,6 +160,31 @@ body,
     0 3px 12px rgba(0,0,0,0.23);
 }
 
+.navbar {
+background-color: black;
+display: flex;
+justify-content: center;
+color: white;
+font-size: 1.5rem;
+
+
+
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    width: 150px;
+    padding; 20px 10px;
+    margin: 15px;
+    text-align: center;
+}
+.navbar a:hover {
+    color: rgb(97, 44, 44);
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px grey;
+}
+
+
 @media (max-width: 620px) {
   body {
     font-size: 13px;
@@ -193,7 +220,14 @@ body,
     <div class="panel" data-img="Landscape01.jpg">
         
     </div>
-    <div class="panel" data-img="Landscape02.jpg"></div>
+    <div class="panel" data-img="Landscape02.jpg">
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="chisiamo.html">About</a>
+            <a href="servizi.html">Services</a>
+        
+        </nav>
+    </div>
     <div class="panel" data-img="Landscape03.jpg"></div>
     <div class="panel" data-img="Landscape04.jpg"></div>
     <div class="panel" data-img="Landscape05.jpg"></div>
@@ -211,12 +245,6 @@ body,
     </div>
   </div>
 
-</div>
-
-
-<div class="optional">  
-  <h3>Lorem ipsum dolor sit amet.</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus asperiores natus minus ab sit. Ipsum iste, doloribus suscipit ducimus ea repudiandae consequatur soluta repellat saepe fuga, velit odit odio facilis, at sunt quis quo molestias quae. Ullam nisi, error facilis nobis maxime numquam quaerat, voluptatibus sit debitis ea quasi incidunt?</p>
 </div>
 
 
